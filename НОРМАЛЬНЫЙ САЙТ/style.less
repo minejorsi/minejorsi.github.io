@@ -1,0 +1,277 @@
+/* collors	*/
+@btn-color : #fcb303;
+@icons-color : #46b814;
+@text : #1a1820;
+@danger: red;
+/* basic settion*/
+html{
+	font-size:10px;
+}
+button,input,a{
+	&:focus{
+		outline: none;
+	}
+}
+a:hover{
+	text-decoration:none;
+}
+.button{
+	background-color: @btn-color;
+	color: white;
+	padding:1rem 3rem;
+	border-radius: 8px;
+	text-transform:uppercase;
+	border:none;
+	font-family: arial black;
+	transition: all 0.3s;
+	&:hover {
+		cursor: pointer;
+		background-color:darken(@btn-color, 5%);
+	}
+}
+.section {
+padding:10rem 0;
+}
+.border{
+	border:0.5px solid red;
+}
+.container,main,{
+	
+}
+
+/*main*/
+
+
+
+
+
+
+.main{
+	padding:2rem 0;
+	background-color:grey;
+	&-content{
+		margin-top: 150px;
+	}
+	h1 {
+		//Делаю сайты для пожилых людей
+		margin-bottom: 4rem;
+		font-family: tahoma;
+		font-size: 4rem;
+		text-transform : uppercase;
+		font-weight: 900;
+	}
+	&-subtitle{
+		//Идеальная адаптивная вертска сайта в кратчайшие сроки
+		font-size: 24px;
+		color: black;
+		margin-top: 40px;
+	}
+	.count{
+		//10
+		font-size: 3rem;
+	}
+	&-title{
+		margin-top: -10px;
+	}
+	&-trigger{
+		//оплата по факту
+		font-family: tahoma;
+		margin-top: 10px;
+		display: block;
+		font-size: 15px;
+		font-weight: 800;
+
+	}
+	
+	.price{
+		//зеленый квадрат
+		margin-top:22px;
+		border-radius: 6px;
+		border:1px solid @icons-color;
+		background-color:@icons-color;
+		display: inline-block;
+		padding: 2rem 2rem;
+		font-family: IMPACT;
+		font-size:1.8rem;
+		font-weight: 50;
+		color : white;
+		text-align: center;
+	}
+	//Вся белая херня с вводом
+	&-form{
+		border-radius: 6px;
+		text-align: center;
+		padding:4rem 5rem;
+		background-color: white;
+		//для расчета...
+		&-header {
+
+			font-size: 1.8rem;
+			strong{
+				font-size: 1.9rem;
+			}
+		}
+		// поле для ввода
+		&-input{
+			margin:2rem 0;
+			display:block;
+			width: 100%;
+			border:1px solid grey;
+			padding:1.5rem;
+		}
+		//Ваше имя... Ваш телефон.. и фон для них белый
+		label{
+			font-size: 1.3rem;
+			display:inline-block;
+			padding:0.5rem;
+			position: absolute;
+			left:50%;
+			transform: translateX(-50%) translateY(-50%);
+			background-color:white;
+		}
+		//Кнопка отправить заявку
+		&-btn{
+			display: block;
+			font-size: ;
+			height: 5.5rem;
+			width: 100%;
+			font-size: 1.6rem;
+		}
+		//надпись под кнопкой 
+		small{
+			display: block;
+			margin-top:0.5rem;
+		}
+
+	}
+
+}
+
+//Бэтман
+.logo1{
+	height: 80px;
+	padding-right: 20px;
+}
+
+//блок для номера
+.phone-block{
+	text-align: right;
+}
+//номер телефона
+.number{
+	color:black;
+	display: inline-block;
+	font-weight: 500;
+	font-size:1.5rem;
+	height: 7rem;
+	line-height: 7rem;
+	font-weight: 900;
+	font-family: FRANKLIN GOTHIC MEDIUM;
+}
+//"мой сайт"
+.My{
+	font-size: 16px;
+	font-family: tahoma;
+	font-weight: 900;
+}
+//херная для выравнивания кнопки
+.wrap{
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-block{
+		text-align: right;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+//оформление приемуществ
+
+.section-header{
+	margin-top:100px;
+	margin-bottom:40px;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 900;
+}
+//слайдер
+.prev{
+	position:absolute;
+	top:50%;
+	z-index:99;
+	left:0;
+	width: 2rem;
+	background:url(photo.png) no-repeat;
+	height: 2rem;
+	transform:scaleY(-50%);
+}
+.next{
+	position:absolute;
+	top:50%;
+	right:0;
+	z-index:99;
+	width: 2rem;
+	background:url(photo.png) no-repeat;
+	height: 2rem;
+	transform:scaleY(+50%);
+}
+.features{
+	&-block {
+		text-align:center;
+		margin:20px;
+	}
+	p{
+		display: inline-block;
+		font-size: 1.4rem;
+		
+	}
+	h3{
+		margin-top:30px;
+		margin-bottom: 30px;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	&-img {
+		img {
+			display: block;
+			margin:0 auto;
+			
+		}
+    }
+}
+
+//main адаптация
+
+@media(max-width:991px ) {
+
+	.phone-block{
+		text-align: center;
+	}
+	.main-title{
+		text-align: center;
+		margin-top: -90px;
+	}
+	.main-form{
+		text-align: center;
+		margin-top: 40px;
+	}
+	.main {
+		h1{
+			font-size: 50px;
+		}
+		&-subtitle{
+			margin-top:-0px;
+			font-size: 30px;
+			
+		}
+	}
+}
+@media(max-width:767px ) {
+	.header,.wrap-block{
+		text-align: center;
+	}
+	
+}
+.slick-active{
+	outline: none;
+}

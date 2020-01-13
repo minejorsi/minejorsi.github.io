@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>WEB</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="main">
+		<div class="container">
+			<div class="header">
+
+				<div class="row">
+
+					<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+						<div class="logo">
+							<img src="photo1.png" class="logo1">
+							<span class="My">Мой сайт</span> 
+						</div>
+				   </div>
+		
+				   <div class="col-lg-2 offset-lg-4 col-md-3 offset-md-0 col-sm-3 offset-sm-0 col-xs-12">
+				   		<div class="phone-block">
+				   			<a href="" class="number">
+				   				+7 909 288 85
+							</a>
+				   		</div>
+				   </div>
+				   <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
+				   		<div class="wrap">
+				   			<div class="wrap-block">
+				   				<button class="button">
+				   					Получить консультацию	
+				   				</button>
+				   			</div>
+				   		</div>
+				   </div>
+				   </div>
+			</div>
+			
+			<div class="main-content">
+				<div class="row ">
+					<div class="col-lg-6 col-md-12  opa">
+						<div class="main-title">
+							<h1>Делаю сайты для пожилых людей</h1>
+							<p class="main-subtitle">Идеальная адаптивная вертска сайта </br> в кратчайшие сроки</p>
+								<span class="price">
+									Стоимость работ </br> от <strong class="count"> 1000 </strong>рублей в минуту 
+								</span>
+							<div class="main-trigger">ОПЛАТА ПО ФАКТУ!</div>
+						</div>
+					</div>
+					<div class="col-lg-5 offset-lg-1 col-md-12 col-sm-12 offset-sm-">	
+						<div class="main-form">
+							<h2 class="main-form-header">
+								Для расчета стоимости</br>
+								Заполните ваши данные </br><strong class="connect">для связи</strong>
+							</h2>
+							<form>
+								<label for="">Ваше имя</label>
+								<input type="text" class="main-form-input" name="">
+								<label for="">Номер телефон</label>
+								<input type="text" class="main-form-input" name="">
+								<button class="main-form-btn button" type="submit">оставить заявку</button>
+								<small>Подарок в день обращения</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="features">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-header">Преимущества работы с нами</h2>
+			</div>
+		<div class="features-slider">
+			<div class="features-block">
+				<div class="features-img">
+					<picture>
+						<img class="features-photo" src="photo.png" alt="">
+					</picture>
+				</div>
+				<h3>Быстро</h3>
+				<p>БыстроБыстроБыстроБыстро</br>БыстроБыстроБыстроБысБыстроБыстро</p>
+			</div>
+			<div class="features-block">
+				<div class="features-img">
+					<picture>
+						<img class="features-photo" src="photo.png" alt="">
+					</picture>
+				</div>
+				<h3>Быстро</h3>
+				<p>БыстроБыстроБыстрБыстроБыстро</br>БыстроБыстроБыстроБыстро</p>
+			</div>
+			<div class="features-block">
+				<div class="features-img">
+					<picture>
+						<img class="features-photo" src="photo.png" alt="">
+					</picture>
+				</div>
+				<h3>Быстро</h3>
+				<p>БыстроБыстроБысыстроБыстр</br>оБыстроБыстроБоБыстроБыстро</p>
+			</div>
+			<div class="features-block">
+				<div class="features-img">
+					<picture>
+						<img class="features-photo" src="photo.png" alt="">
+					</picture>
+				</div>
+				<h3>Быстро</h3>
+				<p>БыстроБыстроБыстрроБыБ</br>строБыстроБыстроБроБыстро</p>
+			</div>
+		</div>	
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-theme.css">
+	<script src="slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  			$('.features-slider').slick({
+    			infinite: true,
+  				slidesToShow: 4,
+  				slidesToScroll: 1,
+  				responsive: [
+  				   {
+  				     breakpoint: 991,
+  				     settings: {
+  				       slidesToShow: 2,
+  				       prevArrow: '<button class="prev"></button>', 
+  				       nextArrow: '<button class="next"></button>', 
+  				       slidesToScroll: 2,
+  				       infinite: true,
+  				       
+  				     }
+  				   },
+  				   
+  				   {
+  				     breakpoint: 767,
+  				     settings: {
+  				       slidesToShow: 1,
+  				       slidesToScroll: 1
+  				     }
+  				   }
+  				   
+  				 ]	
+  			});
+		});
+	</script>
+</body>
+</html>
